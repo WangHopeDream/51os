@@ -9,8 +9,8 @@ void delay_ms(unsigned int ms) {
 void main(void) {
     while(1) {
         P3_5 = 0;  // LED 亮
-        delay_ms(500);
+        delay_ms(100);
         P3_5 = 1;  // LED 灭
-        delay_ms(500);
+        delay_ms(100);
     }
 }
