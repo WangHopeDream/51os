@@ -1,4 +1,4 @@
-  {
+{
     "configurations": [
         {
             "name": "sdcc",
@@ -6,19 +6,21 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE",
-                "__sfr=unsigned char",
-                "__sbit=int",
-                "__at(a)= ",
-                "__data= ",
-                "__xdata= ",
-                "__interrupt n= ",
-                "__using= "
+                "__sfr=unsigned char",   // SDCC 特殊寄存器类型
+                "__sbit=int",            // SDCC 特殊位类型
+                "__at(a)=",              // 地址定位语法
+                "__data=",               // 数据段修饰符
+                "__xdata=",              // 扩展数据段修饰符
+                "__interrupt(a)=",       // 允许中断号参数
+                "__using(b)="            // 允许寄存器组参数
             ],
             "includePath": [
-                "${workspaceFolder}/inc" 
+                "${workspaceFolder}/inc",
+                "/usr/local/share/sdcc/include"  // 添加 SDCC 系统头文件路径
             ],
-            "compilerPath": "/usr/local/bin/sdcc", // sdcc编译器安装目录
-            "cStandard": "c99"
+            "compilerPath": "/usr/local/bin/sdcc",
+            "cStandard": "c99",
+            "intelliSenseMode": "gcc-x86"  // 或尝试 "msvc-x64"
         }
     ],
     "version": 4
