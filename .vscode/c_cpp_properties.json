@@ -1,0 +1,25 @@
+  {
+    "configurations": [
+        {
+            "name": "sdcc",
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__sfr=unsigned char",
+                "__sbit=int",
+                "__at(a)= ",
+                "__data= ",
+                "__xdata= ",
+                "__interrupt n= ",
+                "__using= "
+            ],
+            "includePath": [
+                "${workspaceFolder}/inc" 
+            ],
+            "compilerPath": "/usr/local/bin/sdcc", // sdcc编译器安装目录
+            "cStandard": "c99"
+        }
+    ],
+    "version": 4
+}

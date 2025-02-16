@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "echo '工作目录: ${workspaceFolder}' && cd ${workspaceFolder} && echo '正在清理旧文件...' && make clean || (echo '清理失败!'; exit 1) && echo '开始编译...' && make OUTDIR=output || (echo '编译失败!'; exit 1) && echo '构建成功: ${workspaceFolder}/main.hex'",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make clean",
+            "problemMatcher": []
+        }
+    ]
+}
