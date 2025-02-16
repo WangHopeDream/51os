@@ -2,5 +2,10 @@
     "files.associations": {
         "8051.h": "c",
         "8052.h": "c"
-    }
+    },
+    "marscode.chatLanguage": "cn",
+    "marscode.codeCompletionPro": {
+        "enableCodeCompletionPro": true
+    },
+    "marscode.enableInlineCommand": true
 }

@@ -11,8 +11,10 @@
                 "__at(a)=",              // 地址定位语法
                 "__data=",               // 数据段修饰符
                 "__xdata=",              // 扩展数据段修饰符
+                "__idata=",
                 "__interrupt(a)=",       // 允许中断号参数
-                "__using(b)="            // 允许寄存器组参数
+                "__using(b)=",            // 允许寄存器组参数
+                "__critical="  // 
             ],
             "includePath": [
                 "${workspaceFolder}/inc",
